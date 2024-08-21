@@ -1,0 +1,385 @@
+@media (min-width: 320px) and (max-width: 1024px) {
+  .container {
+      max-width: 952px;
+  }
+
+  .header {
+    left: 36px;
+  }
+
+  .hero {
+    width: 1024px;
+  }
+
+  .hero__content {
+    top: 632px;
+    left: 364px;
+  }
+
+  .about__title {
+    max-width: 620px;
+  }
+  .about__description {
+    max-width: 788px;
+  }
+
+  .about__gallery {
+    flex-direction: column;
+  }
+
+  .about__gallery-left {
+    gap: 32px;
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .about__gallery-left-img {
+    width: 460px;
+    height: 196px;
+  }
+
+  .about__gallery-right-img {
+    width: 100%;
+  }
+
+  .giveaway-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .giveaway__title {
+    max-width: 460px;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .giveaway__title img {
+    margin-bottom: 15px;
+  }
+
+  .giveaway__title h2 {
+    margin-left: 0px;
+  }
+
+  .giveaway__description {
+    max-width: 460px;
+    margin-bottom: 98px;
+  }
+
+  .giveaway-form {
+    margin-top: 0px;
+  }
+
+  .giveaway-form__btn span {
+    display: none;
+  }
+
+  .giveaway__game-consoles {
+    position: absolute;
+    width: 460px;
+    height: 858px;
+    top: 95px;
+    left: 492px;
+    margin-left: 0px;
+    object-fit: cover;
+  }
+
+  .monitor__content-left {
+    margin-top: 42px;
+  }
+
+  .monitor__logos {
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .monitor__logos img {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+
+  .monitor-img {
+    width: 460px;
+    height: 317px;
+  }
+
+  .monitor__btn {
+    margin-bottom: 80px;
+  }
+
+  .buy-game__disks {
+    width: 332px;
+
+  }
+
+  .buy-game__disks img {
+    max-width: 260%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .buy-game__details {
+    width:  67.58%;
+  }
+
+}
+
+/* Медиа запрос для ширины экрана 320*/
+@media (max-width: 320px) {
+  p, span, label, button {
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-size: 30px;
+  }
+
+  .container {
+      max-width: 296px;
+  }
+
+  .header {
+    left: 12px;
+    flex-direction: column;
+  }
+
+  .header__logo img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .header__socials-list{
+    gap: 30px;
+  }
+
+  .header__socials-item img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .hero {
+    width: 320px;
+    height: 717px;
+    background-image: url(../images/11.png);
+  }
+
+  .hero__content {
+    top: 556px;
+    left: 0px;
+    height: 207px;
+  }
+
+  .hero__content > * {
+    margin-left: 0px;
+  }
+  
+  .hero__title {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .hero__btn {
+    margin-left: 38px;
+    width: 244px;
+    height: 60px;
+    font-size: 20px;
+  }
+ 
+  .about > * {
+    font-size: 16px;
+  }
+  
+  .about__title {
+    font-size: 30px;
+    margin-top: 116px;
+  }
+
+  .about__gallery {
+    margin-left: -12px;
+    width: 320px;
+
+  }
+
+  .about__gallery-left {
+    flex-direction: column;
+    gap: 32px;
+    width: 320px;
+  }
+
+  .about__gallery-left-img {
+    width: 320px;
+    height: 196px;
+    margin-right: 0px;
+  }
+
+  .giveaway__title {
+    margin-top: 6px;
+  }
+  .giveaway__title img {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 0px;
+  }
+
+  .giveaway__title-text {
+    margin-top: 143px;
+  }
+
+  .giveaway__description {
+    margin-bottom: 70px;
+  }
+
+  .giveaway__game-consoles {
+    top: 55px;
+    left: 0px;
+    height: 131px;
+    width: 296px;
+  }
+
+  .monitor__content {
+    flex-direction: column;
+  }
+  
+  .monitor__content-left {
+    margin-bottom: 40px;
+  }
+
+  .monitor-img {
+    width: 296px;
+    height: 204px;
+  }
+
+  .monitor__logos {
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+
+  .monitor__logos img {
+    margin-right: 13.7px;
+    margin-bottom: 0px;
+  }
+
+  .monitor__logos .hp-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .monitor__logos img[alt="x"]{
+    width: 50px;
+    height: 49px;
+  }
+  
+  .monitor__logos .cyberpunk-logo{
+    width: 175.41px;
+    height: 44px;
+    margin-right: 0px;
+  }
+
+  .monitor__content-right {
+    margin-left: 0px;
+  }
+
+  .monitor__title {
+    margin-bottom: 25px;
+  }
+
+  .monitor__description {
+    margin-bottom: 25px;
+  }
+
+  .monitor__advantage-text {
+    margin-left: 18px;
+  }
+
+  .buy-game__content {
+    flex-direction: column;
+  }
+
+  .buy-game__disks {
+    max-width: 320px;
+    height: 196px;
+  }
+
+  .buy-game__disks-img,
+  .buy-game__details 
+  {
+    width: 100%;
+  }
+
+  .buy-game__details > * {
+    margin-left: 12px;
+  }
+
+  .buy-game__details h2{
+    margin-top: 40px;
+  }
+
+  .buy-game__equipment {
+    margin-bottom: 40px;
+  }
+  .equipment__list-item img {
+    width: 24px;
+    height: 24px;
+  }
+  .equipment__description {
+    margin-left: 18px;
+    font-size: 16px;
+    max-width: 254px;
+  }
+
+  .equipment__important {
+    font-size: 20px;
+  }
+
+  .platforms span {
+    margin-bottom: 26px;
+  } 
+
+  .platforms__table-row img {
+    margin-right: 56px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__container-left {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .footer__container-left img {
+    margin: 0px;
+    margin-bottom: 25px;
+  }
+
+  .cyberpunk-logo {
+    width: 200px;
+    height: 50px;
+  }
+
+  .cd_project-logo {
+    width: 116px;
+    height: 50px;
+  }
+ 
+  .footer__container-right {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .licence {
+    margin-left: 123px;
+    margin-bottom: 15px;
+  }
+
+  .privacy {
+    margin-left: 39px;
+    margin-bottom: 25px;
+  }
+
+} 
