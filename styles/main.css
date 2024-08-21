@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	text-decoration: none;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+	font-family: 'Archangelsk';
+	src: url('../fonts/archangelsk.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/archangelsk.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/archangelsk.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/archangelsk.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/archangelsk.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/archangelsk.svg#archangelsk') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+p {
+	line-height: 34px;
+	max-width: 952px;
+}
+
+p, span, label, button {
+	font-size: 18px;
+}
+
+button, input {
+	border: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+h1, h2 {
+	font-family: 'Archangelsk', sans-serif;;
+	font-size: 62px;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+}
+
+.noise {	
+	width: 100%;
+	height: 70px;
+	object-fit: cover
+}
+
+.container {	
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	justify-content: space-between;
+	top: 20px;
+	left: 16.67%;
+	z-index: 2;
+}
+
+.header__socials-list {
+	display: flex;
+	gap:  40px;
+}
+
+.hero {
+	background-image: url(../images/bg-hero1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 1000px;
+}
+
+.hero__content {
+	position: relative;
+	top: 63.1%;
+	left: 50.83%;
+	max-width: 624px;
+	height: 369px;
+	background-color: #F8F200;
+	clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+}
+
+.hero__content > * {
+	margin-left: 70px;
+}
+
+.hero__title {
+	padding-top: 70px;
+	padding-bottom: 25px;
+	max-width: 484px;
+}
+
+.hero__btn {
+	width: 272px;
+	height: 78px;
+	padding: 19px 50px;
+	background-color: black;
+	border: none;
+	font-size: 24px;
+	color: #F8F200;
+}
+
+.about {
+	margin-bottom: 70px;
+}
+
+.about__title {
+	margin-top: 70px;
+	margin-bottom: 25px;
+}
+
+.about__description {
+	color: #8a8989;
+	margin-bottom: 70px;
+}
+
+.important {
+	color: #52bedc;
+	font-weight: 700;
+}
+
+.about__gallery {
+	display: flex;
+	justify-content: space-between;	
+}
+
+.about__gallery img {
+	object-fit: cover;
+	clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+}
+
+.about__gallery-left {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.about__gallery-left-img {
+	width: 460px;
+	height: 196px;
+}
+
+.about__gallery-right-img {
+	width: 788px;
+	height: 424px;
+}
+
+.giveaway {
+	width: 100%;
+	position: relative;
+	background-color: black;
+}
+
+.giveaway__title {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	
+}
+.giveaway__title img {
+	width: 132px;
+	height: 132px;
+}
+
+.giveaway__title-text {
+	color: white;
+	margin-left: 32px;
+}
+
+.giveaway__description {
+	max-width: 952px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+.giveaway__form-images {
+	display: flex;
+}
+
+.giveaway-form {
+	display: flex;
+	flex-direction: column;
+	width: 460px;
+	margin-top: 73px;
+	margin-bottom: 70px;
+}
+
+.giveaway-form > * {
+	font-family: "Roboto", sans-serif;
+	color: white;
+}
+
+.giveaway-form__label{
+	font-weight: 300;
+}
+
+.giveaway-form__input {
+	background: none;
+	border-bottom: 1px solid #777777;
+}
+
+.giveaway-form input:not(input[type="file"]) {
+	margin-bottom: 35px;
+}
+
+.giveaway-form__upload-btn {
+	position: relative; 
+	margin-bottom: 35px;
+}
+.giveaway-form__file-input { 
+	position: absolute; 
+    left: 5%; 
+    top: 0; 
+	height: 100%;
+    opacity: 0; 
+} 
+
+.giveaway-form__btn{
+	width: 100%;
+	height: 120px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: 1px dashed #777777
+}
+
+.giveaway-form__btn p {
+	font-weight: 300;
+	margin-bottom: 0px;
+	text-decoration: underline;
+}
+
+.giveaway-form__btn span {
+	font-size: 12px;
+}
+
+.giveaway-form__send-btn {
+	width: 192px;
+	height: 59px;
+	background-color: #F8F200;
+	color: black;
+	font-size: 18px;
+	padding: 19px 50px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.giveaway-form__checkbox-container {
+	display: flex;
+	align-items: center;
+}
+
+.giveaway-form__checkbox {
+	appearance: none;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #777777;
+	background-color: black;
+	cursor: pointer;
+	position: relative;
+}
+.giveaway-form__checkbox:checked::before {
+	content: "✔";
+	position: absolute;
+	top: -3px;
+	left: 1px;
+	color: yellow;
+	font-size: 13px;
+}
+
+.giveaway-form__checkbox-label {
+	margin-bottom: 33px;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.giveaway__game-consoles {
+	width: 788px;
+	height: 456px;
+	margin-left: 32px;
+}
+
+.monitor {
+	width: 100%;
+	background-color: #F8F200;
+}
+
+.monitor__content {
+	margin-top: 70px;
+	display: flex;
+}
+
+.monitor-img {
+	width: 624px;
+	height: 430px;
+	margin-bottom: 26px;
+}
+
+.monitor__logos {
+	display: flex;
+	align-items: center;
+	margin-left: 42px;
+	margin-bottom: 70px;
+}
+
+.monitor__logos img {
+	margin-right: 35px;
+}
+
+.monitor__content-right {
+	max-width: 624px;
+	margin-left: 32px;
+}
+
+.monitor__title {
+	margin-bottom: 25px;
+}
+
+.monitor__advantages {
+	margin-bottom: 40px;
+}
+
+.monitor__advantages-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.monitor__advantage-text{
+	margin-left: 10px;
+}
+
+.monitor__btn {
+	width: 194px;
+	height: 59px;
+	background-color: black;
+	color: #F8F200;
+	padding: 19px 50px;
+}
+
+.buy-game__content {
+	display: flex;
+}
+
+.buy-game__disks {
+	max-width: 49.17%;
+}
+
+.buy-game__disks img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.buy-game__details {
+	width: 50.83%;
+	background-color: black;
+	color: white;
+}
+
+.buy-game__details > * {
+	margin-left: 32px;
+}
+
+.buy-game__details h2 {
+	max-width: 624px;
+	margin-top: 70px;
+	margin-bottom: 25px;
+}
+
+.equipment__important {
+	font-size: 24px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.buy-game__equipment {
+	margin-bottom: 70px;
+}
+
+.equipment__list-item {
+	display: flex;
+    align-items: center;
+	margin-bottom: 15px;
+}
+
+.equipment__description {
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.platforms {
+	max-width: 319px;
+	margin-bottom: 70px;
+}
+
+.platforms span {
+	margin-bottom: 25px;
+}
+
+.platforms__table-row {
+	display: flex;
+}
+
+.platforms__table-row img {
+	margin-right: 80px;
+}
+
+.platforms__table-row:last-child {
+	margin-top: 48px;
+}
+
+.footer {
+	width: 100%;
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__container-left img {
+	margin: 13px 0px;
+	margin-right: 32px;
+}
+
+.cyberpunk-logo {
+	width: 296px;
+}
+
+.cd_project-logo {
+	margin-right: 0px;
+}
+
+.footer__container-right > * {
+	cursor: pointer;
+}
+
+.licence {
+	margin-right: 32px;
+}
+
+.footer__bottom {
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 13px 0;
+}
+
+.footer__bottom-trademark {
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 13px;
+}
+
